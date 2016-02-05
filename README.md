@@ -20,4 +20,4 @@ $emails = array(
     )
     // bla bla bla ...
 );</pre>
-<a href="http://ibacor.com/inbox.php" target="_BLANK">DEMO</a>
+<a href="http://ibacor.com/demo/reading-imap-mailbox" target="_BLANK">DEMO</a>
