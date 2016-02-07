@@ -13,6 +13,16 @@
 				white-space: pre-wrap;
 				word-wrap: break-word;
 			}
+			.panel-heading .read {
+				background: #fafafa;
+				border-color: #f5f5f5
+			}
+			sup{
+				background: #FF6C60;
+				color: #fff;
+				padding: 3px;
+				border-radius: 50%
+			}
 		</style>
 	</head>
 	<body>
@@ -55,7 +65,7 @@
 
 				$html.= '<div class="panel panel-default">
 							<div class="panel-heading">
-								<h3>'.$email['label'].'</h3>
+								<h3>'.$email['label'].' <sup>'.$jumlah.'</sup></h3>
 							</div>
 							<div class="panel-body">
 								<div class="panel-group" id="accordion">';
@@ -107,7 +117,7 @@
 #####################################################################################################################################
 																		
 					$html.= '	<div class="panel panel-default">
-									<div class="panel-heading">
+									<div class="panel-heading '.$seen.'">
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#'.$email['no'].$result[$i].'">
 												<span class="subject">'.substr(strip_tags($overview[0]->subject),0,50).'.. </span>
