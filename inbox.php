@@ -76,6 +76,12 @@
 					$message = imap_body($read,$result[$i],0);																		
 					$header = imap_headerinfo($read,$result[$i],0);																		
 					$reply = $header->from[0]->mailbox.'@'.$header->from[0]->host;
+			
+					if($overview[0]->seen){
+						$seen = 'read';
+					}else{
+						$seen = 'unread';
+					}
 					
 					$msg = '';
 									
