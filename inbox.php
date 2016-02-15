@@ -126,9 +126,9 @@
 									<div class="panel-heading '.$seen.'">
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#'.$email['no'].$result[$i].'">
-												<span class="subject">'.substr(strip_tags($overview[0]->subject),0,50).'.. </span>
-												<span class="from">'.$overview[0]->from.'</span>
-												<span class="date">on '.$overview[0]->date.'</span>
+												<span class="label label-info subject">'.substr(strip_tags($msg),10,60).'.. </span>
+												<span class="label label-warning from">'.(preg_match("/=/", $overview[0]->from) ? $reply : $overview[0]->from).'</span>
+												<span class="label label-success date">'.$overview[0]->date.'</span>
 											</a>
 										</h4>
 									</div>
