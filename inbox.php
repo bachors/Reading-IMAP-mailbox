@@ -134,7 +134,7 @@
 									</div>
 									<div id="'.$email['no'].$result[$i].'" class="panel-collapse collapse">
 										<div class="panel-body">
-											<pre>'.$msg.'<hr>From: <a href="mailto:'.$reply.'">'.$reply.'</a></pre>
+											<pre>'.preg_replace('/--(.*)/i', '', $msg).'<hr>From: <a href="mailto:'.$reply.'">'.$reply.'</a></pre>
 										</div>
 									</div>
 								</div>';												
